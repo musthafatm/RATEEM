@@ -13,6 +13,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import com.iroid.tarbinol.ContentFragment;
 import com.iroid.tarbinol.R;
 
 public class ExecutiveNameActivity extends AppCompatActivity
@@ -42,11 +43,15 @@ public class ExecutiveNameActivity extends AppCompatActivity
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+
+
+        loadFirstFrame();
     }
 
+    private void loadFirstFrame() {
 
-
-
+        getSupportFragmentManager().beginTransaction().replace(R.id.frame,new ContentFragment()).commit();
+    }
 
 
     @Override
