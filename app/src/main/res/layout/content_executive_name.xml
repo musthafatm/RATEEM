@@ -8,8 +8,7 @@
     android:orientation="vertical"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="com.iroid.tarbinol.ui.ExecutiveNameActivity"
-    android:scrollbars="vertical"
-    tools:showIn="@layout/app_bar_executive_name">
+    android:scrollbars="vertical">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -55,6 +54,13 @@
             android:drawableLeft="@drawable/ic_placeholder"
             android:drawablePadding="@dimen/spacing_tiny"
             android:textColor="@color/white" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:background="@color/black"
+            android:layout_height="0.5dp">
+
+        </FrameLayout>
 
     </LinearLayout>
 
